@@ -1,12 +1,200 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #b7e4d9;
+}
+input{
+  font-size: 15px;
+}
+button{
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+/* navbar style  */
+
+.navbar{
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: transparent;
+  color: rgb(57, 179, 9);
+}
+.navbar h2{
+  width: fit-content;
+  padding: 2px;
+  
+}
+.brand-first{
+  margin-right: 5px;
+}
+.brand-last{
+  margin-right: 2px;
+  color: #fd0102;
+}
+.navbar button{
+  background-color: transparent;
+  color: #0bcece;
+  border: 2px solid #0bcece;
+  border-radius: 5px  ;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+
+}
+.navbar button:hover{
+  background-color: #0bcece;
+  color: #fff;
+}
+.albums-list{
+  width: 80%;
+  margin: auto;
+  padding-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.list{
+  width: 300px;
+  height: 250px;
+  background-color: #478ac8;
+  margin-bottom: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.list h2{
   text-align: center;
+  text-transform: capitalize;
+  color: #fff;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button-group{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
+.update-btn{
+  color: green;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.update-btn:hover{
+  color: #0bcece;
+}
+.delete-btn{
+  color: red;
+  border: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.delete-btn:hover{
+  color: #610808;
+}
+/* updateAlbum style  */
+.update-album{
+  width: 500px;
+  margin: auto;
+  margin-top: 100px;
+  padding-top: 20px;
+  color: white;
+  background-color: #0bcece;
+}
+.update-album h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: red;
 
+}
+.form-container{
+  color: #478ac9;
+  padding: 10px;
+  margin-top: 50px;
+}
+.input-container input{
+  width: 250px;
+  height: 30px;
+  margin: 20px;
+  border: none;
+  padding: none;
+  outline: none;
+  font-size: 18px;
+}
+.form-container button{
+  margin-top: 20px;
+  background-color: green;
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bolder;
+  color: white;
+}
+/* addAlbum  style */
+.addalbum-container{
+  color: white;
+  padding-top: 70px;
+  width: 500px;
+  margin: auto;
+}
+.addalbum-container h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: rgb(205, 226, 12);
+}
+.addalbum-form{
+  padding: 20px;
+  background-color: #3491e7;
+  margin-top: 50px;
+}
+.input-container span{
+  color: #f1c70a;
+  font-size: 20px;
+  font-weight: bold  ;
+}
+.input-container input{
+  width: 250px;
+  height: 30px;
+  margin: 20px;
+  border: none;
+  padding: none;
+  outline: none;
+  font-size: 18px;
+
+}
+.addalbum-container button{
+  margin-top: 20px;
+  background-color: green;
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bolder;
+  color: #fff;
+  
+}
+.addalbum-container button:hover{
+  
+  background-color: rgb(76, 175, 76);
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
